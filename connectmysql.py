@@ -19,7 +19,11 @@ class connectMysql():
         return "This Modul provides to connect Mysql from python projects easier"
     
     #DEFINE FOUR BASIC FUNCTIONS(SELECT,INSERT,UPDATE,DELETE)
-    def selectValue(self,allDistinct = "NONE",columns = ["*"],table = "",joinTables = [],joinType = ["INNER","LEFT","RIGHT"],joinColumns = [],joinValues = [],whereColumns = [],whereValues = [],groupBy = [],havingColumns = [],havingValues = [],orderBy = [],ascDesc = ["ASC","DESC"]):
+    def selectValue(self,allDistinct = "NONE",columns = ["*"],table = "",joinTables = [],
+                        joinType = ["INNER","LEFT","RIGHT"],joinColumns = [],joinValues = [],
+                        whereColumns = [],whereValues = [],
+                        groupBy = [],havingColumns = [],havingValues = [],
+                        orderBy = [],ascDesc = ["ASC","DESC"]):
         query = "SELECT "
         if allDistinct != "NONE":
             query += allDistinct
